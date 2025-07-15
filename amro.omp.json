@@ -30,11 +30,17 @@
           "style": "plain",
           "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
-        },
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
         {
           "foreground": "#FFA500",
           "style": "plain",
-          "template": " \uf017 {{ .CurrentDate | date \"15:04:05\" }}",
+          "template": "\uf017 {{ .CurrentDate | date \"15:04:05\" }} ",
           "type": "time"
         }
       ],
