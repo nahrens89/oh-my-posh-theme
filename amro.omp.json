@@ -30,6 +30,12 @@
           "style": "plain",
           "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
+        },
+        {
+          "foreground": "#FFA500",
+          "style": "plain",
+          "template": " \uf017 {{ .CurrentDate | date \"15:04:05\" }}",
+          "type": "time"
         }
       ],
       "type": "prompt"
@@ -47,7 +53,7 @@
         {
           "foreground": "#CD4277",
           "style": "plain",
-          "template": "# ",
+          "template": "\ue285 ",
           "type": "text"
         }
       ],
